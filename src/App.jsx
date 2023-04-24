@@ -245,7 +245,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="fillInfoRow">
+          <div className="fillInfoRow1">
             <div className="inputField">
               <label
                 className="label"
