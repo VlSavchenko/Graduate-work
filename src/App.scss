@@ -1,0 +1,376 @@
+body {
+  background-color: #f2f2f2;
+  // background-image: url(../public/img/background.png);
+  // background-size: 100%;
+  // background-repeat: no-repeat;
+}
+
+.header {
+  // position: sticky;
+  top: 0;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 1200px;
+
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  // align-items: center;
+  align-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .titleWrapper {
+    width: 50%; // добавил для нового дизайна
+    display: flex;
+    align-items: center;
+
+    .title {
+      width: 650px;
+      font-size: 60px;
+      font-weight: 900;
+      padding-left: 10%;
+
+
+      p {
+        font-size: 18px;
+        font-weight: 700;
+        max-width: 80%;
+      }
+    }
+  }
+
+  .mainHeaderImg {
+    width: 50%;
+    // width: 600px;
+  }
+
+  .btnCreateResumeContainer {
+    width: 35%;
+    padding: 5%;
+    margin: auto 0;
+
+    .btnCreateResume {
+      display: inline-block;
+      font-size: 24px;
+      font-weight: 500;
+      text-align: center;
+      color: white;
+      padding: 10px;
+      background-color: #26d45d;
+      border-radius: 10px;
+      transition: scale 0.1s ease-in-out;
+
+      &:hover {
+        scale: 1.02;
+        cursor: pointer;
+      }
+
+      &:active {
+        scale: 0.98;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .listOfAdvantages {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 10px;
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+
+  .testDiv {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    border-radius: 5px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+
+    .titleWrapper {
+      width: 90%;
+
+      .title {
+        font-size: 40px;
+        text-align: center;
+      }
+    }
+
+    .mainHeaderImg {
+      width: 90%;
+    }
+  }
+}
+
+.navigation {
+  position: sticky;
+  display: flex;
+  // flex-direction: column;
+  // flex-basis: content;
+  flex-wrap: wrap;
+  z-index: 50;
+  width: 80%;
+  height: 2em;
+  margin: 0 auto;
+  overflow: hidden;
+
+  top: 0;
+
+  // margin-top: 300px;
+  // background-color: #f5dbae;
+
+  a {
+    margin-right: 10px;
+    font-size: 22px;
+  }
+}
+
+.App {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  // background-color: #b2f1ee;
+
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    // background-color: #62eb72;
+    scroll-margin-top: 1em;
+
+    .text {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.5;
+
+      li {
+        // margin-bottom: 10px;
+        line-height: 2.5;
+        // list-style-type: circle;
+      }
+    }
+
+    // word-wrap: break-word;
+    .blockTitle {
+      font-size: 26px;
+      font-weight: 600;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .listOfExplainCards {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 50px;
+
+      .explainCard {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        flex-direction: row;
+        width: 300px;
+        height: 180px;
+        // border: 1px solid rgb(202, 196, 196);
+        text-align: center;
+
+        img {
+          width: 50%;
+        }
+
+        .text {
+          font-size: 20px;
+          font-weight: 500;
+          margin: auto;
+        }
+      }
+    }
+
+    .fillInfoRow {
+      display: flex;
+      // flex-wrap: wrap;
+      padding: 20px;
+      padding-top: 10px;
+      padding-bottom: 0px;
+
+      .fillInfoContainer {
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .inputField {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .input {
+
+          height: 2em;
+          padding: 5px;
+
+          font-size: 1.1em;
+          border-radius: 5px;
+          border: 1px solid rgb(199, 199, 199);
+          background-color: #f4f7fc;
+
+
+
+          &:active,
+          &:focus {
+            outline: 0;
+            border: 1px solid rgb(157, 156, 156);
+            box-shadow: 0 0 3px rgba(0, 0, 0, .2) inset;
+          }
+
+
+        }
+
+        .label {}
+
+        select {
+          height: 46px !important;
+        }
+      }
+
+      .profilePic {
+        margin-top: 19px;
+        margin-left: 40px;
+        margin-right: 10px;
+        width: 160px;
+        height: 180px;
+        border-radius: 5px;
+        border: 1px solid rgb(199, 199, 199);
+        background-color: #f4f7fc;
+      }
+
+      .width60 {
+        width: 60%;
+      }
+
+      .flex2 {
+        flex: 2;
+      }
+
+      .flex1 {
+        flex: 1;
+      }
+
+
+
+    }
+
+    .columnReverse {
+      flex-direction: row;
+    }
+
+  }
+
+  .whiteWrapper {
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .fillInfoRow {
+    flex-direction: column;
+  }
+
+  .profilePic {
+    margin: 10px auto !important;
+  }
+
+  .columnReverse {
+    flex-direction: column-reverse !important;
+  }
+}
+
+// @media (max-width: 450px) {
+//   .header {
+//     .mainHeaderImg {
+//       width: 90%;
+//     }
+//   }
+// }
+
+// @media (max-width: 889px) {
+//   .header {
+//     .titleWrapper {
+//       width: 90%;
+
+//       // .title {
+//       //   padding: 3%;
+//       // }
+//     }
+
+//     .btnCreateResumeContainer {
+//       width: 60%;
+//       display: flex;
+
+//       .btnCreateResume {
+//         margin: 0 auto;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 1200px) and (min-width: 889px) {
+//   .header {
+//     .titleWrapper {
+//       width: 50%;
+//     }
+
+
+//   }
+// }
+
+
+@media (max-width: 1000px) {
+  .App {
+    .navigation {
+      visibility: hidden !important;
+    }
+  }
+
+  .listOfExplainCards {
+    flex-wrap: wrap;
+    justify-content: center !important;
+
+    .explainCard {
+      width: 80% !important;
+    }
+  }
+}
