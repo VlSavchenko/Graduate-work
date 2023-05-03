@@ -5,13 +5,76 @@ body {
   // background-repeat: no-repeat;
 }
 
+.navigation {
+  position: fixed;
+  top: 0;
+  display: flex;
+  // flex-direction: column;
+  // flex-basis: content;
+  flex-wrap: wrap;
+  z-index: 50;
+  width: 100%;
+  margin: 0 auto;
+  height: 5em;
+  overflow: hidden;
+  // background-color: #f2f2f2;
+  top: 0;
+
+  // margin-top: 300px;
+  // background-color: #f5dbae;
+  .navWrapper {
+    display: flex;
+    align-items: center;
+    // background-color: #e9e8e8;
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(202, 199, 199);
+
+    a {
+      font-weight: 500;
+      margin-right: 10px;
+      font-size: 22px;
+      text-shadow: 1px 1px rgb(171, 170, 170);
+
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .navigation {
+    .navWrapper {
+      width: 95%;
+
+      a {
+        flex: 1;
+      }
+    }
+  }
+}
+
+.backgroundHeader {
+  background-image: url(../public/img/background4.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.blur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+
 .header {
   // position: sticky;
   top: 0;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   min-height: 100vh;
-  max-width: 1200px;
+  // max-width: 1200px;
 
   display: flex;
   // flex-direction: column;
@@ -19,28 +82,43 @@ body {
   justify-content: center;
   // align-items: center;
   align-content: center;
-  border-radius: 5px;
+  // border-radius: 5px;
   overflow: hidden;
+  z-index: 10;
 
-  .titleWrapper {
-    width: 50%; // добавил для нового дизайна
+
+
+  // background-image: url(../public/img/background4.jpg);
+  // background-size: cover;
+  // background-position: center;
+
+
+  .blockInHeader {
     display: flex;
-    align-items: center;
+    max-width: 1200px;
 
-    .title {
-      width: 650px;
-      font-size: 60px;
-      font-weight: 900;
-      padding-left: 10%;
+    .titleWrapper {
+      width: 50%; // добавил для нового дизайна
+      display: flex;
+      align-items: center;
 
+      .title {
+        width: 650px;
+        font-size: 70px;
+        font-weight: 900;
+        padding-left: 10%;
+        color: #000000;
+        text-shadow: 3px 3px rgb(255, 255, 255);
 
-      p {
-        font-size: 18px;
-        font-weight: 700;
-        max-width: 80%;
+        p {
+          font-size: 18px;
+          font-weight: 700;
+          max-width: 80%;
+        }
       }
     }
   }
+
 
   .mainHeaderImg {
     width: 50%;
@@ -102,16 +180,21 @@ body {
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) and (min-width: 501px) {
   .header {
-    flex-direction: column;
-
-    .titleWrapper {
+    .blockInHeader {
       width: 90%;
+      margin-top: 150px;
+      flex-direction: column;
 
-      .title {
-        font-size: 40px;
-        text-align: center;
+      .titleWrapper {
+
+        width: 90%;
+
+        .title {
+          font-size: 40px;
+          text-align: center;
+        }
       }
     }
 
@@ -121,26 +204,27 @@ body {
   }
 }
 
-.navigation {
-  position: sticky;
-  display: flex;
-  // flex-direction: column;
-  // flex-basis: content;
-  flex-wrap: wrap;
-  z-index: 50;
-  width: 80%;
-  height: 2em;
-  margin: 0 auto;
-  overflow: hidden;
+@media (max-width: 500px) {
+  .header {
+    .blockInHeader {
+      margin-top: 90px;
+      width: 90%;
+      flex-direction: column;
 
-  top: 0;
+      .titleWrapper {
 
-  // margin-top: 300px;
-  // background-color: #f5dbae;
+        width: 90%;
 
-  a {
-    margin-right: 10px;
-    font-size: 22px;
+        .title {
+          font-size: 40px;
+          text-align: center;
+        }
+      }
+    }
+
+    .mainHeaderImg {
+      width: 90%;
+    }
   }
 }
 
@@ -153,7 +237,6 @@ body {
   height: 100%;
   // background-color: #b2f1ee;
 
-
   .block {
     display: flex;
     flex-direction: column;
@@ -162,8 +245,9 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     margin-bottom: 10px;
+    padding-bottom: 20px;
     // background-color: #62eb72;
-    scroll-margin-top: 1em;
+    scroll-margin-top: 4em;
 
     .text {
       font-size: 18px;
@@ -177,12 +261,12 @@ body {
       }
     }
 
-    // word-wrap: break-word;
     .blockTitle {
       font-size: 26px;
       font-weight: 600;
       margin: 0;
       padding: 20px;
+      // padding-bottom: 0;
     }
 
     .listOfExplainCards {
@@ -215,6 +299,13 @@ body {
       }
     }
 
+    .contentDescription {
+      font-size: 26px;
+      font-weight: 500;
+      margin: 0;
+      padding: 20px;
+    }
+
     .fillInfoRow {
       display: flex;
       // flex-wrap: wrap;
@@ -245,19 +336,22 @@ body {
           border: 1px solid rgb(199, 199, 199);
           background-color: #f4f7fc;
 
-
-
           &:active,
           &:focus {
             outline: 0;
             border: 1px solid rgb(157, 156, 156);
             box-shadow: 0 0 3px rgba(0, 0, 0, .2) inset;
           }
+        }
 
+        .checkbox {
+          width: 30px;
+          height: 30px;
+          margin: auto 0;
 
         }
 
-        .label {}
+        // .label {}
 
         select {
           height: 46px !important;
