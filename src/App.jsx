@@ -6,7 +6,12 @@
 // } from "framer-motion";
 import "macro-css";
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.scss";
+import Description from "./components/Description";
+import Header from "./components/Header";
+import ListOfExplainCards from "./components/ListOfExplainCards";
+import Navigation from "./components/Navigation";
 
 function App() {
   // const { scrollYProgress } = useScroll();
@@ -30,140 +35,54 @@ function App() {
 
   return (
     <>
-      <div className="navigation clear">
-        <div className="navWrapper">
-          <a href="#header">Главная</a>
-          <a href="#first">Как это работает?</a>
-          {/* <a href="#second">Second</a> */}
-          <a href="#third">Заполнить резюме</a>
-        </div>
-      </div>
-      <header
-        id="header"
-        className="header backgroundHeader"
-      >
-        <div className="blur">
-          <div className="blockInHeader">
-            <div className="titleWrapper">
-              <div className="title">
-                Конструктор резюме онлайн
-                <p>
-                  {/* Составить резюме онлайн и вывести его на печать или скачать
-          готовый файл вы можете с помощью нашего онлайн конструктора.
-          Создайте резюме бесплатно, используя качественные шаблоны и
-          образцы, которые отлично подойдут для устройства на работу. */}
-                </p>
-              </div>
-            </div>
-            <img
-              className="mainHeaderImg"
-              src="img/icons/a_man_who_uses_a_computer.svg"
-              alt="Man"
-            />
-          </div>
-        </div>
+      <Navigation />
+      <Routes>
+        <Route
+          path="/"
+          element={<Header />}
+        ></Route>
+      </Routes>
 
-        {/* <div className="btnCreateResumeContainer">
-          <div className="btnCreateResume">Создать резюме</div>
-        </div> */}
-
-        {/* <div className="listOfAdvantages">
-          <div className="item">
-            <p>Быстро</p>
-            <img
-              width={40}
-              src="img/icons/quickly_fill_resume.svg"
-              alt="Quickly"
-            />
-          </div>
-          <div className="item">
-            <p>Просто</p>
-            <img
-              width={40}
-              src="img/icons/simply_fill_resume.svg"
-              alt="Simply"
-            />
-          </div>
-          <div className="item">
-            <p>Эффективно</p>
-            <img
-              width={40}
-              src="img/icons/effective_resume.svg"
-              alt="Effective"
-            />
-          </div>
-        </div> */}
-      </header>
       <div className="App">
-        <div
+        <Routes>
+          <Route
+            path="/about"
+            element={
+              <>
+                <div
+                  id="first"
+                  className="block mt-5em"
+                >
+                  <div className="blockTitle">Как это работает?</div>
+                  <ListOfExplainCards />
+                </div>
+                <div className="block whiteWrapper pr-20">
+                  <div className="blockTitle">
+                    Заполнить резюме онлайн и скачать бесплатно
+                  </div>
+                  <Description />
+                </div>
+              </>
+            }
+          ></Route>
+        </Routes>
+        {/* <div
           id="first"
           className="block"
         >
           <div className="blockTitle">Как это работает?</div>
-          <div className="listOfExplainCards">
-            <div className="explainCard">
-              <img
-                src="img/icons/fill_resume_on_laptop.svg"
-                alt="Male"
-              />
-              <p className="text">Заполняйте резюме онлайн в удобной форме</p>
-            </div>
-            <div className="explainCard">
-              <img
-                src="img/icons/share_link.svg"
-                alt="Male"
-              />
-              <p className="text">Поделитесь ссылкой на резюме</p>
-            </div>
-            <div className="explainCard">
-              <img
-                src="img/icons/cloud_download.svg"
-                alt="Male"
-              />
-              <p className="text">Скачайте резюме в личном кабинете</p>
-            </div>
-          </div>
+          <ListOfExplainCards />
         </div>
-        <div
-          // id="second"
-          className="block whiteWrapper pr-20"
-        >
+        <div className="block whiteWrapper pr-20">
           <div className="blockTitle">
             Заполнить резюме онлайн и скачать бесплатно
           </div>
-          <p className="text ml-20">
-            Составление резюме – сложная задача, требующая определённых знаний.
-            Соискателю необходимо подумать не только над его содержимым, но и
-            над оформлением. Также нужно продумать наличие всех важных блоков.
-            Упростить задачу подготовки резюме поможет составленный нами сервис.
-            Его преимущества:
-          </p>
-          <ul className="text ml-20">
-            <li>
-              Абсолютно бесплатный – никаких разовых или регулярных платежей за
-              пользование сервисом.
-            </li>
-            <li>
-              Простота – воспользоваться сервисом сможет даже начинающий
-              пользователь ПК, плохо разбирающийся в онлайн-инструментах.
-            </li>
-            <li>
-              Создаёт структурированные красивые резюме – не нужно думать над
-              оформлением или расположением отдельных блоков.
-            </li>
-            <li>
-              Не требует регистрации по электронной почте или SMS – приступайте
-              к работе над резюме без предварительных приготовлений.
-            </li>
-            <li>
-              Полностью открытый функционал – пользуйтесь всеми функциями для
-              составления резюме без ограничений.
-            </li>
-          </ul>
-        </div>
+          <Description />
+        </div> */}
+
         <div
           id="third"
-          className="block whiteWrapper"
+          className="block whiteWrapper mt-5em"
         >
           <div className="blockTitle">Составить резюме онлайн</div>
           <div className="contentDescription">Основная информация</div>
@@ -253,7 +172,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="fillInfoRow1">
+          <div className="fillInfoRow">
             <div className="inputField">
               <label
                 className="label"
