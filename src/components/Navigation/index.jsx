@@ -10,6 +10,7 @@ export default function Navigation() {
         <Link to="/about">Как это работает?</Link>
         {/* <a href="#second">Second</a> */}
         <Link to="/resume">Заполнить резюме</Link>
+        <Link to="/CV1"> CV1</Link>
       </div>
     </div>
   );
