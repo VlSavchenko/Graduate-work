@@ -1,0 +1,175 @@
+.backgroundHeader {
+    background-image: url(../../../public/img/background4.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.blur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+.header {
+    // position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    // max-width: 1200px;
+
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: center;
+    align-content: center;
+    // border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+
+
+
+    // background-image: url(../public/img/background4.jpg);
+    // background-size: cover;
+    // background-position: center;
+
+
+    .blockInHeader {
+        display: flex;
+        max-width: 1200px;
+
+        .titleWrapper {
+            width: 50%; // добавил для нового дизайна
+            display: flex;
+            align-items: center;
+
+            .title {
+                width: 650px;
+                font-size: 70px;
+                font-weight: 900;
+                padding-left: 10%;
+                color: #000000;
+                text-shadow: 3px 3px rgb(255, 255, 255);
+
+                p {
+                    font-size: 18px;
+                    font-weight: 700;
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+
+
+    .mainHeaderImg {
+        width: 50%;
+        // width: 600px;
+    }
+
+    .btnCreateResumeContainer {
+        width: 35%;
+        padding: 5%;
+        margin: auto 0;
+
+        .btnCreateResume {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            background-color: #26d45d;
+            border-radius: 10px;
+            transition: scale 0.1s ease-in-out;
+
+            &:hover {
+                scale: 1.02;
+                cursor: pointer;
+            }
+
+            &:active {
+                scale: 0.98;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    .listOfAdvantages {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        padding: 10px;
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+
+    .testDiv {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        border-radius: 5px;
+    }
+
+}
+
+@media (max-width: 700px) and (min-width: 501px) {
+    .header {
+        .blockInHeader {
+            width: 90%;
+            margin-top: 150px;
+            flex-direction: column;
+
+            .titleWrapper {
+
+                width: 90%;
+
+                .title {
+                    font-size: 40px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .mainHeaderImg {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        .blockInHeader {
+            margin-top: 90px;
+            width: 90%;
+            flex-direction: column;
+
+            .titleWrapper {
+
+                width: 90%;
+
+                .title {
+                    font-size: 40px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .mainHeaderImg {
+            width: 90%;
+        }
+    }
+}

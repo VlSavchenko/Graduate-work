@@ -1,0 +1,30 @@
+.listOfExplainCards {
+
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    .explainCard {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        flex-direction: row;
+        width: 300px;
+        height: 180px;
+        // border: 1px solid rgb(202, 196, 196);
+        text-align: center;
+
+        img {
+            width: 50%;
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: 500;
+            margin: auto;
+        }
+    }
+}
