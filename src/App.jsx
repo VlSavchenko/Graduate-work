@@ -36,6 +36,7 @@ function App() {
 
   return (
     <>
+
       <Navigation />
       <Routes>
         <Route
@@ -75,6 +76,7 @@ function App() {
                   id="third"
                   className="block whiteWrapper mt-5em"
                 >
+
                   <div className="blockTitle">Составить резюме онлайн</div>
                   <div className="contentDescription">Основная информация</div>
                   <div className="fillInfoRow columnReverse">
@@ -391,6 +393,7 @@ function App() {
             element={<CV1 />}
           ></Route>
         </Routes>
+
       </div>
 
       <footer style={{ height: "400px" }}></footer>
