@@ -6,8 +6,10 @@
   margin-top: 100px;
 
   .cv1 {
-    width: 210mm;
-    height: 297mm;
+    min-width: 210mm;
+    min-height: 297mm;
+    max-width: 210mm;
+    max-height: 297mm;
     background-color: #ffffff;
     border: 1px solid black;
 
@@ -161,10 +163,30 @@
           }
         }
       }
-
-
     }
-
   }
+}
 
+@media (max-width: 900px) {
+  .CVContainer {
+    scale: 0.7;
+    margin-top: 0;
+    transform: translateY(-100px);
+  }
+}
+
+@media (max-width: 600px) {
+  .CVContainer {
+    scale: 0.5;
+    margin-top: 0;
+    transform: translateY(-380px);
+  }
+}
+
+@media (max-width: 430px) {
+  .CVContainer {
+    scale: 0.4;
+    margin-top: 0;
+    transform: translateY(-600px);
+  }
 }
