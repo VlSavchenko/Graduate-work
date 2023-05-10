@@ -63,7 +63,7 @@ export default function CV1() {
               <div className="d-flex flex-row">
                 <img
                   className={styles.dot}
-                  src="/img/icons/dotForCV.svg"
+                  src="img/icons/dotForCV.svg"
                   alt="Dot"
                 />
                 <div className={styles.text}>
@@ -91,7 +91,7 @@ export default function CV1() {
               <div className="d-flex flex-row">
                 <img
                   className={styles.dot}
-                  src="/img/icons/dotForCV.svg"
+                  src="img/icons/dotForCV.svg"
                   alt="Dot"
                 />
                 <div className={styles.text}>
@@ -125,7 +125,7 @@ export default function CV1() {
               <div className="d-flex flex-row">
                 <img
                   className={styles.dot}
-                  src="/img/icons/dotForCV.svg"
+                  src="img/icons/dotForCV.svg"
                   alt="Dot"
                 />
                 <div className={styles.text}>
@@ -146,7 +146,7 @@ export default function CV1() {
               <div className="d-flex flex-row">
                 <img
                   className={styles.dot}
-                  src="/img/icons/dotForCV.svg"
+                  src="img/icons/dotForCV.svg"
                   alt="Dot"
                 />
                 <div className={styles.text}>
@@ -169,7 +169,7 @@ export default function CV1() {
               <div className="d-flex flex-row">
                 <img
                   className={styles.dot}
-                  src="/img/icons/dotForCV.svg"
+                  src="img/icons/dotForCV.svg"
                   alt="Dot"
                 />
                 <div className={styles.text}>

@@ -171,15 +171,3 @@ body {
     flex-direction: column-reverse !important;
   }
 }
-
-@media (max-width: 1000px) {
-
-  .listOfExplainCards {
-    flex-wrap: wrap;
-    justify-content: center !important;
-
-    .explainCard {
-      width: 80% !important;
-    }
-  }
-}
