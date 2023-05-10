@@ -10,6 +10,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import CV1 from "./CVtemplates/CV1";
 import CV2 from "./CVtemplates/CV2";
+import CV3 from "./CVtemplates/CV3";
 import Description from "./components/Description";
 import Header from "./components/Header";
 import ListOfExplainCards from "./components/ListOfExplainCards";
@@ -394,6 +395,10 @@ function App() {
           <Route
             path="Graduate-work/CV2"
             element={<CV2 />}
+          ></Route>
+          <Route
+            path="Graduate-work/CV3"
+            element={<CV3 />}
           ></Route>
         </Routes>
       </div>

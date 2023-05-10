@@ -1,0 +1,198 @@
+$black: #000;
+$blue: #005BA2;
+$gray: #454545;
+$white: #fff;
+
+@mixin df-fdc() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin f10-400-black() {
+  font-size: 10px;
+  font-weight: 400;
+  color: $black;
+}
+
+@mixin f12-400-gray() {
+  font-size: 12px;
+  font-weight: 400;
+  color: $gray;
+}
+
+@mixin f12-500-gray() {
+  font-size: 12px;
+  font-weight: 500;
+  color: $gray;
+}
+
+@mixin f14-500-black() {
+  font-size: 14px;
+  font-weight: 500;
+  color: $black;
+}
+
+@mixin f14-400-black() {
+  font-size: 14px;
+  font-weight: 500;
+  color: $black;
+}
+
+@mixin f14-700-blue() {
+  font-size: 14px;
+  font-weight: 700;
+  color: $blue;
+}
+
+@mixin f18-500-black() {
+  font-size: 18px;
+  font-weight: 500;
+  color: $black;
+}
+
+@mixin f30-700-blue() {
+  font-size: 30px;
+  font-weight: 700;
+  color: $blue;
+}
+
+// @mixin fs-fw-c($fs, $fw, $c) {
+//   font-size: $fs;
+//   font-weight: $fw;
+//   color: $c;
+// }
+
+.CVContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+  .cv3 {
+    min-width: 210mm;
+    min-height: 297mm;
+    max-width: 210mm;
+    max-height: 297mm;
+    border: 1px solid black;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: $white;
+    @include df-fdc();
+
+    .f10_400_black {
+      @include f10-400-black();
+    }
+
+    .f14_700_blue {
+      @include f14-700-blue();
+    }
+
+    .f12_400_gray {
+      @include f12-400-gray();
+    }
+
+    .f12_500_gray {
+      @include f12-500-gray();
+    }
+
+    .f14_500_black {
+      @include f14-500-black();
+    }
+
+    .nameAndPosition {
+      @include df-fdc();
+      margin-bottom: 40px;
+
+      .name {
+        @include f30-700-blue();
+      }
+
+      .position {
+        @include f14-400-black();
+      }
+    }
+
+    .asides {
+      display: flex;
+      gap: 24px;
+      height: 100%;
+
+      .blockTitle {
+        @include f18-500-black();
+        border-bottom: 1px solid #000;
+      }
+
+      .sidebar {
+        width: 40%;
+        height: 100%;
+        float: right;
+        @include df-fdc();
+        gap: 28px;
+
+        .block {
+          @include df-fdc();
+          gap: 16px;
+          word-wrap: break-word;
+
+          .list {
+            @include df-fdc();
+            gap: 6px;
+          }
+        }
+      }
+
+      .main {
+        width: 60%;
+        height: 100%;
+        float: left;
+        @include df-fdc();
+        gap: 28px;
+
+        .block {
+          @include df-fdc();
+          gap: 16px;
+          word-wrap: break-word;
+
+          .list {
+            @include df-fdc();
+            gap: 16px;
+
+            .item {
+              @include df-fdc();
+              gap: 4px;
+            }
+          }
+        }
+
+      }
+    }
+
+
+
+  }
+}
+
+@media (max-width: 900px) {
+  .CVContainer {
+    scale: 0.7;
+    margin-top: 0;
+    transform: translateY(-100px);
+  }
+}
+
+@media (max-width: 600px) {
+  .CVContainer {
+    scale: 0.5;
+    margin-top: 0;
+    transform: translateY(-380px);
+  }
+}
+
+@media (max-width: 430px) {
+  .CVContainer {
+    scale: 0.4;
+    margin-top: 0;
+    transform: translateY(-600px);
+  }
+}
