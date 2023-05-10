@@ -9,6 +9,8 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import CV1 from "./CVtemplates/CV1";
+import CV2 from "./CVtemplates/CV2";
+import CV3 from "./CVtemplates/CV3";
 import Description from "./components/Description";
 import Header from "./components/Header";
 import ListOfExplainCards from "./components/ListOfExplainCards";
@@ -36,11 +38,10 @@ function App() {
 
   return (
     <>
-
       <Navigation />
       <Routes>
         <Route
-          path="/"
+          path="Graduate-work/"
           element={<Header />}
         ></Route>
       </Routes>
@@ -48,7 +49,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route
-            path="/about"
+            path="Graduate-work/about"
             element={
               <>
                 <div
@@ -69,14 +70,13 @@ function App() {
           ></Route>
 
           <Route
-            path="/resume"
+            path="Graduate-work/resume"
             element={
               <>
                 <div
                   id="third"
                   className="block whiteWrapper mt-5em"
                 >
-
                   <div className="blockTitle">Составить резюме онлайн</div>
                   <div className="contentDescription">Основная информация</div>
                   <div className="fillInfoRow columnReverse">
@@ -389,11 +389,18 @@ function App() {
           ></Route>
 
           <Route
-            path="/CV1"
+            path="Graduate-work/CV1"
             element={<CV1 />}
           ></Route>
+          <Route
+            path="Graduate-work/CV2"
+            element={<CV2 />}
+          ></Route>
+          <Route
+            path="Graduate-work/CV3"
+            element={<CV3 />}
+          ></Route>
         </Routes>
-
       </div>
 
       <footer style={{ height: "400px" }}></footer>
