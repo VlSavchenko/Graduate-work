@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Graduate-work/static/css/main.2a406e0f.css",
+    "main.css": "/Graduate-work/static/css/main.19987984.css",
     "main.js": "/Graduate-work/static/js/main.f2580a45.js",
     "index.html": "/Graduate-work/index.html",
-    "main.2a406e0f.css.map": "/Graduate-work/static/css/main.2a406e0f.css.map",
+    "main.19987984.css.map": "/Graduate-work/static/css/main.19987984.css.map",
     "main.f2580a45.js.map": "/Graduate-work/static/js/main.f2580a45.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a406e0f.css",
+    "static/css/main.19987984.css",
     "static/js/main.f2580a45.js"
   ]
 }
