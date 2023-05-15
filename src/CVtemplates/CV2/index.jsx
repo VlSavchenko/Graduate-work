@@ -13,8 +13,10 @@ export default function index() {
               alt="user"
             />
             <div className={styles.nameAndPosition}>
-              <div className={styles.blockTitle}>Andrew Mallen</div>
-              <div className={styles.yellowDescription}>Design Lead</div>
+              <div className={styles.blockTitle}>Эндрю Маллен</div>
+              <div className={styles.yellowDescription}>
+                Фронтенд разработчик
+              </div>
             </div>
             <div className={styles.links}>
               <div>+11012223344</div>
@@ -22,12 +24,12 @@ export default function index() {
             </div>
           </div>
           <div className={styles.skillsAndInterests}>
-            <div className={styles.blockTitle}>Skills</div>
+            <div className={styles.blockTitle}>Навыки</div>
             <div className={styles.list}>
-              <div>Web Design</div>
-              <div>UX/UI Design</div>
-              <div>Usability testing</div>
-              <div>Prototyping</div>
+              <div>Веб-дизайн</div>
+              <div>Дизайн UX/UI</div>
+              <div>Тестирование юзабилити</div>
+              <div>Создание прототипов</div>
               <div>Figma</div>
               <div>After Effects</div>
               <div>Webflow</div>
@@ -35,78 +37,97 @@ export default function index() {
             </div>
           </div>
           <div className={styles.skillsAndInterests}>
-            <div className={styles.blockTitle}>Interests</div>
+            <div className={styles.blockTitle}>Хобби и интересы</div>
             <div className={styles.list}>
-              <div>Illustration</div>
-              <div>No Code Tools</div>
-              <div>3D Modelling</div>
+              <div>3D моделирование</div>
               <div>Motion Graphics</div>
-              <div>Gaming</div>
-              <div>Bike Riding</div>
-              <div>Reading</div>
-              <div>Football</div>
+              <div>Компьютерные игры</div>
+              <div>Езда на велосипеде</div>
+              <div>Чтение</div>
+              <div>Футбол</div>
+            </div>
+          </div>
+          <div className={styles.skillsAndInterests}>
+            <div className={styles.blockTitle}>Языки</div>
+            <div className={styles.language}>
+              <div>Русский</div>
+              <div>Английский</div>
             </div>
           </div>
         </aside>
         <aside className={styles.main}>
           <div className={styles.aboutBlock}>
-            <div className={styles.blockTitle}>About me</div>
+            <div className={styles.blockTitle}>Обо мне</div>
             <div className={styles.grayText}>
-              I'm a multi-disciplinary Product Designer, specialising in no-code
-              and visual development. Currently Design Lead @ Revolution. Take a
-              look below!
+              Я мультидисциплинарный дизайнер продуктов, специализирующийся на
+              программировании без кода и визуальной разработке.
             </div>
           </div>
           <div className={styles.block}>
-            <div className={styles.blockTitle}>Experience</div>
+            <div className={styles.blockTitle}>Опыт работы</div>
             <div className={styles.list}>
               <div className={styles.item}>
-                <div className={styles.yellowDescription}>
-                  Design Lead @ Revolution
+                <div className={styles.placeAndPosition}>
+                  <div className={styles.place}>Университет Джорджии</div>
+                  <div className={styles.position}>Научный сотрудник</div>
                 </div>
-                <div className={styles.grayText12}>Sep 2019 - Present</div>
+
+                <div className={styles.grayText12}>
+                  Сентябрь 2019 - Настоящее время
+                </div>
                 <div className={styles.grayText}>
-                  Details of your job experience goes here. Briefly showcase
-                  what you did and what you have accomplished at this role. You
-                  can also talk about the tools you used.
+                  Подробная информация о вашем опыте работы приведена здесь.
+                  Кратко продемонстрируйте что вы сделали и чего достигли на
+                  этой должности. Вы можете также рассказать об инструментах,
+                  которые вы использовали.
                 </div>
               </div>
               <div className={styles.item}>
-                <div className={styles.yellowDescription}>
-                  Product Designer @ Circle
+                <div className={styles.placeAndPosition}>
+                  <div className={styles.place}>Университет Джорджии</div>
+                  <div className={styles.position}>Научный сотрудник</div>
                 </div>
                 <div className={styles.grayText12}>Jul 2015 - Aug 2019</div>
                 <div className={styles.grayText}>
-                  Details of your job experience goes here. Briefly showcase
-                  what you did and what you have accomplished at this role. You
-                  can also talk about the tools you used.
+                  Подробная информация о вашем опыте работы приведена здесь.
+                  Кратко продемонстрируйте что вы сделали и чего достигли на
+                  этой должности. Вы можете также рассказать об инструментах,
+                  которые вы использовали.
                 </div>
               </div>
               <div className={styles.item}>
-                <div className={styles.yellowDescription}>
-                  Product Designer @ 360degree
+                <div className={styles.placeAndPosition}>
+                  <div className={styles.place}>Университет Джорджии</div>
+                  <div className={styles.position}>Научный сотрудник</div>
                 </div>
                 <div className={styles.grayText12}>Jan 2012 - Mar 2015</div>
                 <div className={styles.grayText}>
-                  Details of your job experience goes here. Briefly showcase
-                  what you did and what you have accomplished at this role. You
-                  can also talk about the tools you used.
+                  Подробная информация о вашем опыте работы приведена здесь.
+                  Кратко продемонстрируйте что вы сделали и чего достигли на
+                  этой должности. Вы можете также рассказать об инструментах,
+                  которые вы использовали.
                 </div>
               </div>
             </div>
           </div>
           <div className={styles.block}>
-            <div className={styles.blockTitle}>Education</div>
+            <div className={styles.blockTitle}>Образование</div>
             <div className={styles.list}>
               <div className={styles.item}>
-                <div className={styles.yellowDescription}>
-                  University of Technology Sydney
+                <div className={styles.placeAndPosition}>
+                  <div className={styles.place}>Университет Джорджии</div>
+                  <div className={styles.position}>
+                    Бакалавр компьютерных наук, Искусственный интеллект
+                  </div>
                 </div>
-                <div className={styles.grayText12}>Sep 2019 - Present</div>
+                <div className={styles.grayText12}>
+                  Сентябрь 2019 - Настоящее время
+                </div>
                 <div className={styles.grayText}>
-                  Here is where you can mention what you studied and brief
-                  details on what you learnt. You can also mention any
-                  extra-curricular activities you did relating to your degree.
+                  Здесь вы можете упомянуть о том, что вы изучали, и кратко
+                  изложить подробности о том, что вы узнали. Вы также можете
+                  упомянуть о любых внеклассных мероприятиях, которые вы
+                  проводили в связи с вашей степенью.
                 </div>
               </div>
             </div>

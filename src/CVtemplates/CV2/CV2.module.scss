@@ -21,6 +21,12 @@ $bg-cream: #FCFBF7;
   color: $yellow-text;
 }
 
+@mixin f14-400-yellow() {
+  font-size: 14px;
+  font-weight: 400;
+  color: $yellow-text;
+}
+
 @mixin f14-500-gray() {
   font-size: 14px;
   font-weight: 500;
@@ -121,6 +127,12 @@ $bg-cream: #FCFBF7;
         }
       }
 
+      .language {
+        @include df-fdc();
+        gap: 6px;
+        @include f14-500-gray();
+      }
+
     }
 
     .main {
@@ -144,6 +156,21 @@ $bg-cream: #FCFBF7;
           .item {
             @include df-fdc();
             gap: 4px;
+
+            .placeAndPosition {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: flex-end;
+              gap: 2px 10px;
+
+              .place {
+                @include f16-500-yellow();
+              }
+
+              .position {
+                @include f14-400-yellow;
+              }
+            }
           }
         }
       }

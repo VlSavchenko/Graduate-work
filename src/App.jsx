@@ -11,6 +11,8 @@ import "./App.scss";
 import CV1 from "./CVtemplates/CV1";
 import CV2 from "./CVtemplates/CV2";
 import CV3 from "./CVtemplates/CV3";
+import CV4 from "./CVtemplates/CV4";
+import CV5 from "./CVtemplates/CV5";
 import Description from "./components/Description";
 import Header from "./components/Header";
 import ListOfExplainCards from "./components/ListOfExplainCards";
@@ -44,10 +46,18 @@ function App() {
           path="Graduate-work/"
           element={<Header />}
         ></Route>
+        <Route
+          path="*"
+          element={<div></div>}
+        ></Route>
       </Routes>
 
       <div className="App">
         <Routes>
+          <Route
+            path="*"
+            element={<div></div>}
+          ></Route>
           <Route
             path="Graduate-work/about"
             element={
@@ -399,6 +409,14 @@ function App() {
           <Route
             path="Graduate-work/CV3"
             element={<CV3 />}
+          ></Route>
+          <Route
+            path="Graduate-work/CV4"
+            element={<CV4 />}
+          ></Route>
+          <Route
+            path="Graduate-work/CV5"
+            element={<CV5 />}
           ></Route>
         </Routes>
       </div>

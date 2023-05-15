@@ -7,55 +7,63 @@ export default function CV1() {
       <div className={styles.cv1}>
         <aside className={styles.sidebar}>
           <div className={styles.nameAndPosition}>
-            <p className={styles.name}>Hani Husamuddin</p>
-            <p className={styles.position}>Frontend Developer</p>
+            <p className={styles.name}>Эндрю Маллен</p>
+            <p className={styles.position}>Фронтенд разработчик</p>
           </div>
           <div className={styles.personalInfo}>
-            <div className={styles.info}>Surakarta, December 2, 1994</div>
-            <div className={styles.info}>+62 822 2045 4652</div>
-            <div className={styles.info}>hani.husam@gmail.com</div>
-            <div className={styles.info}>Yogyakarta, Indonesia</div>
+            <div className={styles.info}>+11012223344</div>
+            <div className={styles.info}>hello@andrew.com</div>
           </div>
           <div className={styles.personalInfo}>
-            <div className={styles.blockTitle}>Skills</div>
+            <div className={styles.blockTitle}>Навыки</div>
             <ul className={styles.list}>
               <li>HTML and CSS</li>
-              <li>Scripting language: Javascript, Typescript, Python, Java</li>
               <li>
-                Framework/Library: Django, React, Next, Bootstrap, TailwindCSS,
-                etc
+                Языки программирования: Javascript, Typescript, Python, Java
               </li>
               <li>
-                Understanding UI Design; Visual Hierarchy, Design System, etc
+                Фреймворки/Библиотеки: Django, React, Next, Bootstrap,
+                TailwindCSS, etc
+              </li>
+              <li>
+                Понимание дизайна пользовательского интерфейса; Визуальной
+                иерархии, системы проектирования и т.д
               </li>
             </ul>
           </div>
           <div className={styles.personalInfo}>
-            <div className={styles.blockTitle}>Hobbies</div>
+            <div className={styles.blockTitle}>Хобби и интересы</div>
             <ul className={styles.list}>
-              <li>Apple device</li>
-              <li>Movie</li>
-              <li>Book</li>
+              <li>Фильмы</li>
+              <li>Книги</li>
+            </ul>
+          </div>
+          <div className={styles.personalInfo}>
+            <div className={styles.blockTitle}>Языки</div>
+            <ul className={styles.list}>
+              <li>Английский</li>
+              <li>Русский</li>
             </ul>
           </div>
         </aside>
         <aside className={styles.main}>
           <div className={styles.aboutBlock}>
             <div>
-              <div className={styles.blockTitle}>About</div>
+              <div className={styles.blockTitle}>Обо мне</div>
               <hr />
             </div>
             <div className={styles.aboutText}>
-              I have a background in information technology, with a focus on
-              frontend development and UI design. I am the type of person who
-              seizes every opportunity to learn something new. That is why I
-              enjoy challenges. From there, I'm under pressure to learn quickly
-              and gain a lot of new experience.
+              У меня есть опыт работы в области информационных технологий, с
+              акцентом на разработку интерфейсов и дизайн пользовательского
+              интерфейса. Я отношусь к тому типу людей, которые хватаются за
+              любую возможность узнать что-то новое. Вот почему мне нравятся
+              сложные задачи. С этого момента я испытываю давление, требующее
+              быстрого обучения и приобретете много нового опыта.
             </div>
           </div>
           <div className={styles.block}>
             <div>
-              <div className={styles.blockTitle}>Education</div>
+              <div className={styles.blockTitle}>Образование</div>
               <hr />
             </div>
             <div className={styles.blockContent}>
@@ -68,19 +76,19 @@ export default function CV1() {
                 />
                 <div className={styles.text}>
                   <div className={styles.f14_400}>
-                    Informtics, Universitas Pembangunan Nasional ”Veteran”
-                    Yogyakarta
+                    Информатика, Национальный университет Пембангунан ”Ветеран”
+                    Джокьякарта
                   </div>
                   <div className={styles.f12_600}>
-                    Bachelor of Computer Science, Artificial Intelligence
+                    Бакалавр компьютерных наук, Искусственный интеллект
                   </div>
                   <div className={styles.f12_400_grey}>
-                    I graduated in July 2019 with a GPA of 3.63. One of the
-                    award recipients for the best graduate of the university at
-                    the time. In my thesis, I looked into how Natural Language
-                    Processing (NLP) was used in Telegram Bot. For the NLP
-                    approach method, I used Neural Network (Deep Learning) and
-                    Text Mining.
+                    Я окончил школу в июле 2019 года со средним баллом 3,63.
+                    Один из лауреатов премии "Лучший выпускник университета того
+                    времени". В своей диссертации я изучал, как естественный
+                    язык Обработка (NLP) была использована в Telegram-боте. Для
+                    НЛП подходя к методу, я использовал нейронную сеть (глубокое
+                    обучение) и интеллектуальный анализ текста.
                   </div>
                 </div>
               </div>
@@ -96,11 +104,11 @@ export default function CV1() {
                 />
                 <div className={styles.text}>
                   <div className={styles.f14_400}>
-                    Informtics, Universitas Pembangunan Nasional ”Veteran”
-                    Yogyakarta
+                    Информатика, Национальный университет Пембангунан ”Ветеран”
+                    Джокьякарта
                   </div>
                   <div className={styles.f12_600}>
-                    Bachelor of Computer Science, Artificial Intelligence
+                    Бакалавр компьютерных наук, Искусственный интеллект
                   </div>
                   {/* <div className={styles.f12_400_grey}>
                     I graduated in July 2019 with a GPA of 3.63. One of the
@@ -117,11 +125,11 @@ export default function CV1() {
 
           <div className={styles.block}>
             <div>
-              <div className={styles.blockTitle}>Experience</div>
+              <div className={styles.blockTitle}>Опыт работы</div>
               <hr />
             </div>
             <div className={styles.blockContent}>
-              <div className={styles.time}>2019 - Present</div>
+              <div className={styles.time}>2019 - Настоящее время</div>
               <div className="d-flex flex-row">
                 <img
                   className={styles.dot}
@@ -130,19 +138,20 @@ export default function CV1() {
                 />
                 <div className={styles.text}>
                   <div className={styles.f14_600}>Upwork</div>
-                  <div className={styles.f12_400}>Frontend Developer</div>
+                  <div className={styles.f12_400}>Фронтенд разработчик</div>
                   <div className={styles.f12_400_grey}>
-                    Upwork is an American freelancing platform where enterprises
-                    and individuals connect in order to conduct business. I am
-                    currently accepting remote or freelance Web Development and
-                    UI Design work from this platform.
+                    Upwork - это американская платформа для фриланса, где
+                    предприятия и отдельные люди объединяются для того, чтобы
+                    вести бизнес. Я в настоящее время принимаются удаленные или
+                    внештатные работы по веб-разработке и дизайну
+                    пользовательского интерфейса с этой платформы.
                   </div>
                 </div>
               </div>
             </div>
 
             <div className={styles.blockContent}>
-              <div className={styles.time}>Oct 2020 - Aug 2021</div>
+              <div className={styles.time}>Октябрь 2020 - Август 2021</div>
               <div className="d-flex flex-row">
                 <img
                   className={styles.dot}
@@ -150,22 +159,23 @@ export default function CV1() {
                   alt="Dot"
                 />
                 <div className={styles.text}>
-                  <div className={styles.f14_600}>Currinda Pty. Ltd.</div>
+                  <div className={styles.f14_600}>Currinda</div>
                   <div className={styles.f12_400}>UI Engineer</div>
                   <div className={styles.f12_400_grey}>
-                    I am a member of the Engineer Team, along with three other
-                    people. I am in charge of creating an interface design that
-                    is both user-friendly and consistent with the company's
-                    brand. I also assist the team with frontend development,
-                    particularly in the creation of design systems and UI
-                    components with React.
+                    Я являюсь членом команды инженеров вместе с тремя другими
+                    люди. Я отвечаю за создание дизайна интерфейса, который был
+                    бы одновременно удобен для пользователя и соответствовал
+                    принципам компании марка. Я также помогаю команде с
+                    разработкой интерфейса, особенно в создании систем
+                    проектирования и компонентов пользовательского интерфейса с
+                    помощью React.
                   </div>
                 </div>
               </div>
             </div>
 
             <div className={styles.blockContent}>
-              <div className={styles.time}>May 2019 - Nov 2019</div>
+              <div className={styles.time}>Май 2019 - Ноябрь 2019</div>
               <div className="d-flex flex-row">
                 <img
                   className={styles.dot}
@@ -173,13 +183,13 @@ export default function CV1() {
                   alt="Dot"
                 />
                 <div className={styles.text}>
-                  <div className={styles.f14_600}>Bubays Pte. Ltd.</div>
-                  <div className={styles.f12_400}>Web Developer</div>
+                  <div className={styles.f14_600}>Bubays</div>
+                  <div className={styles.f12_400}>Веб разработчик</div>
                   <div className={styles.f12_400_grey}>
-                    I am in charge of the company website's full-stack
-                    development and maintenance. The job entails creating and
-                    maintaining a website from the ground up. In addition, I am
-                    the only Web Developer in this company.
+                    Я отвечаю за полноценную разработку и обслуживание веб-сайта
+                    компании. Работа включает в себя создание и поддержку
+                    веб-сайта с нуля. Кроме того, я являюсь единственный
+                    веб-разработчик в этой компании.
                   </div>
                 </div>
               </div>

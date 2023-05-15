@@ -1,0 +1,161 @@
+$white: #fff;
+$gray-dark: #333333;
+$gray-light: #4F4F4F;
+$gray-ultra-light: #A9A9A9;
+$pink: #F6888B;
+
+@mixin df-fdc($gap: initial) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+@mixin font($fs, $fw, $fc) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $fc;
+}
+
+.CVContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+  .cv4 {
+    min-width: 210mm;
+    min-height: 297mm;
+    max-width: 210mm;
+    max-height: 297mm;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    background-color: #fff;
+    @include df-fdc();
+
+    .nameAndPosition {
+      @include df-fdc();
+      margin-bottom: 40px;
+
+      .name {
+        // @include font(38px, 500, black);
+        @include font(38px, 500, black);
+      }
+
+      .position {
+        @include font(16px, 400, $gray-light);
+      }
+    }
+
+    .asides {
+      display: flex;
+      gap: 30px;
+      height: 100%;
+
+      .blockTitle {
+        @include font(20px, 700, $pink);
+      }
+
+      .block {
+        @include df-fdc(16px);
+
+        .language {
+          @include df-fdc(4px);
+          @include font(12px, 500, $gray-dark);
+        }
+
+        .description {
+          @include font(14px, 400, $gray-light);
+        }
+
+        .list {
+          @include df-fdc(14px);
+
+          .item {
+            @include df-fdc(6px);
+
+            .placeAndPosition {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: flex-end;
+              gap: 2px 10px;
+
+              .place {
+                @include font(16px, 700, $gray-dark);
+              }
+
+              .position {
+                @include font(14px, 400, $gray-dark);
+              }
+            }
+
+            .period {
+              @include font(12px, 500, $gray-ultra-light);
+            }
+
+
+          }
+        }
+      }
+
+      .sidebar {
+        width: 30%;
+        height: 100%;
+        float: left;
+        @include df-fdc(35px);
+
+        .contacts {
+          @include df-fdc(4px);
+          @include font(14px, 500, $gray-dark);
+        }
+
+        .skillsAndInterests {
+          @include df-fdc(9px);
+
+          .list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 24px;
+
+            div {
+              @include font(12px, 400, $gray-dark);
+            }
+          }
+        }
+      }
+
+      .main {
+        width: 70%;
+        height: 100%;
+        float: right;
+        @include df-fdc(30px);
+      }
+    }
+
+  }
+}
+
+@media (max-width: 900px) {
+  .CVContainer {
+    scale: 0.7;
+    margin-top: 0;
+    transform: translateY(-100px);
+  }
+}
+
+@media (max-width: 600px) {
+  .CVContainer {
+    scale: 0.5;
+    margin-top: 0;
+    transform: translateY(-380px);
+  }
+}
+
+@media (max-width: 430px) {
+  .CVContainer {
+    scale: 0.4;
+    margin-top: 0;
+    transform: translateY(-600px);
+  }
+}

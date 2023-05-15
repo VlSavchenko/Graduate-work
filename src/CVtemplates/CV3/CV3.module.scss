@@ -44,6 +44,12 @@ $white: #fff;
   color: $blue;
 }
 
+@mixin f12-600-blue() {
+  font-size: 12px;
+  font-weight: 600;
+  color: $blue;
+}
+
 @mixin f18-500-black() {
   font-size: 18px;
   font-weight: 500;
@@ -161,6 +167,21 @@ $white: #fff;
             .item {
               @include df-fdc();
               gap: 4px;
+
+              .placeAndPosition {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                gap: 2px 10px;
+
+                .place {
+                  @include f14-700-blue();
+                }
+
+                .position {
+                  @include f12-600-blue();
+                }
+              }
             }
           }
         }

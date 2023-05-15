@@ -13,6 +13,8 @@ export default function Navigation() {
         <Link to="/Graduate-work/CV1"> CV1</Link>
         <Link to="/Graduate-work/CV2"> CV2</Link>
         <Link to="/Graduate-work/CV3"> CV3</Link>
+        <Link to="/Graduate-work/CV4"> CV4</Link>
+        <Link to="/Graduate-work/CV5"> CV5</Link>
       </div>
     </div>
   );
